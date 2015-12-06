@@ -8,7 +8,6 @@
 
 import UIKit
 import Foundation
-import AVFoundation
 
 class RadioCell: UITableViewCell {
    
@@ -16,7 +15,6 @@ class RadioCell: UITableViewCell {
     
     @IBOutlet var RadioName: UILabel!
     var cellData:RadioModel.Radio!;
-    var player:AVPlayer = AVPlayer();
 
     
     @IBOutlet var radioImage: UIImageView!
