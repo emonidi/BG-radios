@@ -15,6 +15,8 @@ class RadioDetailViewController: UIViewController {
     var Player = AVPlayer();
     
     
+    @IBOutlet var PlayButtonOutlet: UIButton!
+    @IBOutlet var PauseButton: UIButton!
     @IBOutlet var RadioImage: UIImageView!
     @IBOutlet var RadioTitle: UINavigationItem!
     override func viewDidLoad() {
@@ -24,6 +26,8 @@ class RadioDetailViewController: UIViewController {
         RadioTitle.title = RadioData.name
         getImage(RadioData.stationImgUrl)
         self.navigationController?.navigationItem.backBarButtonItem?.setNilValueForKey("title")
+        
+        PauseButton.hidden = true;
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,6 +72,13 @@ class RadioDetailViewController: UIViewController {
     @IBAction func playButton(sender: UIButton) {
         Player = AVPlayer(URL: RadioData.url);
         Player.play();
+        PlayButtonOutlet.hidden = true;
+        PauseButton.hidden = false;
     }
 
+    @IBAction func pauseButtonClick(sender: AnyObject) {
+        Player.pause();
+        PauseButton.hidden = true;
+        PlayButtonOutlet.hidden = false;
+    }
 }

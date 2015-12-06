@@ -86,6 +86,22 @@ class RadioModel{
                 stationImgUrl:NSURL(string: "http://www.predavatel.com/bg/radio/njoy.png")!
                 
             ),
+            
+            
+            Radio(name: "Радио Nova News",
+                description: "Гледай колкото можеш, слушай колкото искаш.",
+                url: NSURL(string: "http://stream.radioreklama.bg/novanews.mp3.m3u")!,
+                stationImgUrl:NSURL(string: "http://www.predavatel.com/bg/radio/nova-news.png")!
+                
+            ),
+            
+            
+            Radio(name: "Радио City",
+                description: "Хитове до скъсване!",
+                url: NSURL(string: "http://149.13.0.81/city64.m3u")!,
+                stationImgUrl:NSURL(string: "http://www.predavatel.com/bg/1/sofia_snimki/city3.gif")!
+                
+            ),
 
             
         ]

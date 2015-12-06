@@ -20,7 +20,7 @@
                         <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="playback" selectionStyle="default" indentationWidth="10" reuseIdentifier="radio-cell" rowHeight="70" id="yyD-Cb-1L2" customClass="RadioCell" customModule="BG_Radios" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="113.5" width="600" height="70"/>
+                                <rect key="frame" x="0.0" y="93.5" width="600" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="playback" tableViewCell="yyD-Cb-1L2" id="a4R-DB-NDs">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
@@ -181,34 +181,50 @@
                                             <action selector="playButton:" destination="PBC-wi-UZ1" eventType="touchUpInside" id="aT6-IE-9b8"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dx-D1-C66">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" image="pause-image"/>
+                                        <connections>
+                                            <action selector="pauseButtonClick:" destination="PBC-wi-UZ1" eventType="touchUpInside" id="L34-1b-toU"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="7dx-D1-C66" firstAttribute="centerX" secondItem="wHO-AL-zXt" secondAttribute="centerX" id="FYi-sb-DSx"/>
                                     <constraint firstItem="BOt-7G-KUw" firstAttribute="centerY" secondItem="wHO-AL-zXt" secondAttribute="centerY" id="OJQ-e7-tiG"/>
                                     <constraint firstAttribute="height" constant="60" id="bDT-B2-k7P">
                                         <variation key="widthClass=compact" constant="80"/>
                                     </constraint>
+                                    <constraint firstItem="7dx-D1-C66" firstAttribute="centerY" secondItem="wHO-AL-zXt" secondAttribute="centerY" id="cVw-6z-arh"/>
                                     <constraint firstItem="BOt-7G-KUw" firstAttribute="centerX" secondItem="wHO-AL-zXt" secondAttribute="centerX" id="njp-wO-mJq"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
                                         <exclude reference="BOt-7G-KUw"/>
+                                        <exclude reference="7dx-D1-C66"/>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="bDT-B2-k7P"/>
                                         <exclude reference="OJQ-e7-tiG"/>
                                         <exclude reference="njp-wO-mJq"/>
+                                        <exclude reference="FYi-sb-DSx"/>
+                                        <exclude reference="cVw-6z-arh"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="subviews">
                                         <include reference="BOt-7G-KUw"/>
+                                        <include reference="7dx-D1-C66"/>
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="bDT-B2-k7P"/>
                                         <include reference="OJQ-e7-tiG"/>
                                         <include reference="njp-wO-mJq"/>
+                                        <include reference="FYi-sb-DSx"/>
+                                        <include reference="cVw-6z-arh"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -262,6 +278,8 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
+                        <outlet property="PauseButton" destination="7dx-D1-C66" id="pia-dT-QOT"/>
+                        <outlet property="PlayButtonOutlet" destination="BOt-7G-KUw" id="6MK-Pm-69b"/>
                         <outlet property="RadioImage" destination="8ny-q9-rJ1" id="lnx-Xk-8JV"/>
                         <outlet property="RadioTitle" destination="0co-Fc-h4z" id="eyb-Ig-8bC"/>
                     </connections>
@@ -297,6 +315,7 @@
     </scenes>
     <resources>
         <image name="Default.png" width="16" height="16"/>
+        <image name="pause-image" width="32" height="32"/>
         <image name="play-image" width="32" height="32"/>
     </resources>
 </document>
