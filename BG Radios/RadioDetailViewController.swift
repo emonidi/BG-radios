@@ -12,8 +12,7 @@ import AVFoundation
 class RadioDetailViewController: UIViewController {
     
     var RadioData:RadioModel.Radio!;
-    var Player = AVPlayer();
-    
+    var Player:AVPlayer!
     
     @IBOutlet var PlayButtonOutlet: UIButton!
     @IBOutlet var PauseButton: UIButton!
@@ -28,6 +27,7 @@ class RadioDetailViewController: UIViewController {
         self.navigationController?.navigationItem.backBarButtonItem?.setNilValueForKey("title")
         
         PauseButton.hidden = true;
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,7 +45,6 @@ class RadioDetailViewController: UIViewController {
                         self.RadioImage.setNeedsLayout()
                         self.view.setNeedsLayout()
                         self.applyBlur(self.RadioImage.image!)
-
                     }
                 })
             }
@@ -70,10 +69,13 @@ class RadioDetailViewController: UIViewController {
     }
     
     @IBAction func playButton(sender: UIButton) {
-        Player = AVPlayer(URL: RadioData.url);
-        Player.play();
+//        Player = AVPlayer(URL: RadioData.url);
+//        Player.play();
         PlayButtonOutlet.hidden = true;
         PauseButton.hidden = false;
+        var playerItem = AVPlayerItem(URL: RadioData.url);
+        Player = AVPlayer(playerItem: playerItem);
+        Player.play();
     }
 
     @IBAction func pauseButtonClick(sender: AnyObject) {
@@ -81,4 +83,5 @@ class RadioDetailViewController: UIViewController {
         PauseButton.hidden = true;
         PlayButtonOutlet.hidden = false;
     }
+    
 }

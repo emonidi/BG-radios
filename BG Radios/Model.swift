@@ -35,7 +35,7 @@ class RadioModel{
         [
             Radio(name: "Радио 1",
                 description: "Kласическите хитове!",
-                url: NSURL(string: "http://149.13.0.81/radio1128.m3u")!,
+                url: NSURL(string: "http://stream.radioreklama.bg:80/radio1128")!,
                 stationImgUrl:NSURL(string: "http://www.predavatel.com/bg/radio/radio1.png")!
             ),
             Radio(name: "Радио 1 Рок ",
