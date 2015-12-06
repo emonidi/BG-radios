@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BG Radios/Model.swift"
-            timestampString = "471090427.232465"
+            timestampString = "471108533.08734"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "Radio"
             landmarkType = "3">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BG Radios/Model.swift"
-            timestampString = "471090427.232465"
+            timestampString = "471108533.08734"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "RadioModel"
             landmarkType = "3">
          </BreakpointContent>
@@ -307,7 +307,7 @@
                   moduleName = "BG Radios"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/emonidi/Dev/Projects/IOS%20Learn/bg_radios/BG%20Radios/BG%20Radios/RadioDetailViewController.swift"
-                  timestampString = "471101921.17101"
+                  timestampString = "471107821.347"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -322,12 +322,27 @@
                   moduleName = "BG Radios"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/emonidi/Dev/Projects/IOS%20Learn/bg_radios/BG%20Radios/BG%20Radios/RadioDetailViewController.swift"
-                  timestampString = "471101921.171394"
+                  timestampString = "471107821.34718"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
                   offsetFromSymbolStart = "66">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BG_Radios.RadioDetailViewController.init (BG_Radios.RadioDetailViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;BG_Radios.RadioDetailViewController&gt;"
+                  moduleName = "BG Radios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emonidi/Dev/Projects/IOS%20Learn/bg_radios/BG%20Radios/BG%20Radios/RadioDetailViewController.swift"
+                  timestampString = "471107821.347269"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -435,11 +450,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BG Radios/Model.swift"
-            timestampString = "471090427.232465"
+            timestampString = "471108533.08734"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "sections"
             landmarkType = "19">
             <Locations>
@@ -539,11 +554,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BG Radios/RadioDetailViewController.swift"
-            timestampString = "471101920.144704"
+            timestampString = "471107783.577381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "playButton(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -555,11 +570,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BG Radios/RadioDetailViewController.swift"
-            timestampString = "471101920.144704"
+            timestampString = "471107783.577381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "playButton(_:)"
             landmarkType = "5">
             <Locations>
@@ -594,6 +609,22 @@
                   offsetFromSymbolStart = "23">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BG Radios/WaveFormViewIOS.m"
+            timestampString = "471104508.293452"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "511"
+            endingLineNumber = "511"
+            landmarkName = "-statusUpdated:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

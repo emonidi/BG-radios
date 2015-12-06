@@ -87,7 +87,6 @@ class RadioModel{
                 
             ),
             
-            
             Radio(name: "Радио Nova News",
                 description: "Гледай колкото можеш, слушай колкото искаш.",
                 url: NSURL(string: "http://stream.radioreklama.bg/novanews.mp3.m3u")!,
@@ -95,11 +94,24 @@ class RadioModel{
                 
             ),
             
-            
             Radio(name: "Радио City",
                 description: "Хитове до скъсване!",
                 url: NSURL(string: "http://149.13.0.81/city64.m3u")!,
                 stationImgUrl:NSURL(string: "http://www.predavatel.com/bg/1/sofia_snimki/city3.gif")!
+                
+            ),
+            
+            Radio(name: "Радио FM+",
+                description: "Животът е песен!",
+                url: NSURL(string: "http://193.108.24.21:8000/fmplus")!,
+                stationImgUrl:NSURL(string: "http://www.predavatel.com/bg/1/fmplus/fmplus2.gif")!
+                
+            ),
+            
+            Radio(name: "Радио Фокус",
+                description: "Националният информационен лидер.",
+                url: NSURL(string: "http://online.focus-radio.net:8100/sofia.m3u")!,
+                stationImgUrl:NSURL(string: "http://www.predavatel.com/bg/1/sofia_snimki/focus.gif")!
                 
             ),
 

@@ -73,8 +73,7 @@ class RadioDetailViewController: UIViewController {
 //        Player.play();
         PlayButtonOutlet.hidden = true;
         PauseButton.hidden = false;
-        var playerItem = AVPlayerItem(URL: RadioData.url);
-        Player = AVPlayer(playerItem: playerItem);
+        Player = AVPlayer(URL: RadioData.url);
         Player.play();
     }
 
