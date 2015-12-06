@@ -31,19 +31,6 @@ class RadioCell: UITableViewCell {
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-//        if(selected == true){
-//            player.pause();
-//
-//            if let cellData = cellData{
-//                player = AVPlayer(URL: cellData.url);
-//                player.play();
-//            }
-//        }else{
-//            player.pause();
-//        }
-        // Configure the view for the selected state
-        
     }
     
     
@@ -51,7 +38,6 @@ class RadioCell: UITableViewCell {
         cellData = model;
         
         let request = NSURLRequest(URL: model.stationImgUrl);
-        
         
         NSURLSession.sharedSession().dataTaskWithRequest(request,completionHandler: {(data,response,error)->Void in
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
@@ -64,7 +50,6 @@ class RadioCell: UITableViewCell {
 
             })
         }).resume();
-        
         
     }
     
