@@ -107,7 +107,11 @@ class RadioDetailViewController: UIViewController {
     }
     
     func setTrackDetails(details: String){
+        self.SongTitle.center.x -= self.view.bounds.width
         self.SongTitle.text = details;
+        UIView.animateWithDuration(0.5, animations: {()->Void in
+            self.SongTitle.center.x += self.view.bounds.width
+        })
     }
     
     override func viewDidDisappear(animated: Bool) {
