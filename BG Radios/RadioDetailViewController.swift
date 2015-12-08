@@ -13,11 +13,13 @@ class RadioDetailViewController: UIViewController {
     
     var RadioData:RadioModel.Radio!;
     var Player:AVPlayer!
+    var playerItem:AVPlayerItem!
     
     @IBOutlet var PlayButtonOutlet: UIButton!
     @IBOutlet var PauseButton: UIButton!
     @IBOutlet var RadioImage: UIImageView!
     @IBOutlet var RadioTitle: UINavigationItem!
+    @IBOutlet var SongTitle: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +29,10 @@ class RadioDetailViewController: UIViewController {
         self.navigationController?.navigationItem.backBarButtonItem?.setNilValueForKey("title")
         
         PauseButton.hidden = true;
+        
+       
+        
+
         
     }
 
@@ -62,7 +68,6 @@ class RadioDetailViewController: UIViewController {
             blurEffectView.frame = self.view.bounds
             blurEffectView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
             
-            
             //if you have more UIViews, use an insertSubview API to place it where needed
             self.view.insertSubview(blurEffectView, atIndex: 0)
         }
@@ -73,14 +78,44 @@ class RadioDetailViewController: UIViewController {
 //        Player.play();
         PlayButtonOutlet.hidden = true;
         PauseButton.hidden = false;
-        Player = AVPlayer(URL: RadioData.url);
+        var asset = AVAsset(URL: RadioData.url)
+        playerItem = AVPlayerItem(asset: asset);
+        playerItem.addObserver(self, forKeyPath: "timedMetadata", options: NSKeyValueObservingOptions.New, context: nil)
+        Player = AVPlayer(playerItem: playerItem);
         Player.play();
     }
-
+    
+    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+        if keyPath != "timedMetadata" { return }
+        
+        var data: AVPlayerItem = object as! AVPlayerItem
+        var title = "";
+        for item in data.timedMetadata! as [AVMetadataItem] {
+            title = "\(item.value!)"
+            print(title);
+        }
+        
+        dispatch_async(dispatch_get_main_queue(), {()->Void in
+            self.SongTitle.text = title;
+        })
+        
+    
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        removePlayerObserver();
+    }
+    
+    
     @IBAction func pauseButtonClick(sender: AnyObject) {
         Player.pause();
+        removePlayerObserver();
         PauseButton.hidden = true;
         PlayButtonOutlet.hidden = false;
     }
     
+    
+    func removePlayerObserver(){
+        playerItem.removeObserver(self, forKeyPath: "timedMetadata")
+    }
 }

@@ -307,7 +307,7 @@
                   moduleName = "BG Radios"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/emonidi/Dev/Projects/IOS%20Learn/bg_radios/BG%20Radios/BG%20Radios/RadioDetailViewController.swift"
-                  timestampString = "471107821.347"
+                  timestampString = "471244048.837111"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -322,7 +322,7 @@
                   moduleName = "BG Radios"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/emonidi/Dev/Projects/IOS%20Learn/bg_radios/BG%20Radios/BG%20Radios/RadioDetailViewController.swift"
-                  timestampString = "471107821.34718"
+                  timestampString = "471244048.837332"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -337,7 +337,7 @@
                   moduleName = "BG Radios"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/emonidi/Dev/Projects/IOS%20Learn/bg_radios/BG%20Radios/BG%20Radios/RadioDetailViewController.swift"
-                  timestampString = "471107821.347269"
+                  timestampString = "471244048.837485"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -386,11 +386,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BG Radios/RadioDetailViewController.swift"
-            timestampString = "471098122.776946"
+            timestampString = "471244027.570048"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "getImage(_:)"
             landmarkType = "5">
             <Locations>
@@ -434,11 +434,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BG Radios/RadioDetailViewController.swift"
-            timestampString = "471098122.776946"
+            timestampString = "471244027.570048"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "applyBlur(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -550,70 +550,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BG Radios/RadioDetailViewController.swift"
-            timestampString = "471107783.577381"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "playButton(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BG Radios/RadioDetailViewController.swift"
-            timestampString = "471107783.577381"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "playButton(_:)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BG_Radios.RadioDetailViewController.playButton (BG_Radios.RadioDetailViewController)(__ObjC.UIButton) -&gt; ()"
-                  moduleName = "BG Radios"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emonidi/Dev/Projects/IOS%20Learn/bg_radios/BG%20Radios/BG%20Radios/RadioDetailViewController.swift"
-                  timestampString = "471100132.167535"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "81"
-                  endingLineNumber = "81"
-                  offsetFromSymbolStart = "1112">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BG_Radios.RadioDetailViewController.(playButton (BG_Radios.RadioDetailViewController) -&gt; (__ObjC.UIButton) -&gt; ()).(closure #1)"
-                  moduleName = "BG Radios"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emonidi/Dev/Projects/IOS%20Learn/bg_radios/BG%20Radios/BG%20Radios/RadioDetailViewController.swift"
-                  timestampString = "471100132.167992"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "82"
-                  endingLineNumber = "82"
-                  offsetFromSymbolStart = "23">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -624,6 +560,54 @@
             startingLineNumber = "511"
             endingLineNumber = "511"
             landmarkName = "-statusUpdated:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BG Radios/RadioDetailViewController.swift"
+            timestampString = "471244167.260896"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "observeValueForKeyPath(_:ofObject:change:context:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BG Radios/RadioDetailViewController.swift"
+            timestampString = "471244167.260896"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "observeValueForKeyPath(_:ofObject:change:context:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BG Radios/RadioDetailViewController.swift"
+            timestampString = "471244167.260896"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "observeValueForKeyPath(_:ofObject:change:context:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

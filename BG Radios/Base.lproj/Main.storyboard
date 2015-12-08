@@ -208,10 +208,10 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="bDT-B2-k7P"/>
-                                        <exclude reference="OJQ-e7-tiG"/>
-                                        <exclude reference="njp-wO-mJq"/>
                                         <exclude reference="FYi-sb-DSx"/>
                                         <exclude reference="cVw-6z-arh"/>
+                                        <exclude reference="OJQ-e7-tiG"/>
+                                        <exclude reference="njp-wO-mJq"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
@@ -221,32 +221,50 @@
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="bDT-B2-k7P"/>
-                                        <include reference="OJQ-e7-tiG"/>
-                                        <include reference="njp-wO-mJq"/>
                                         <include reference="FYi-sb-DSx"/>
                                         <include reference="cVw-6z-arh"/>
+                                        <include reference="OJQ-e7-tiG"/>
+                                        <include reference="njp-wO-mJq"/>
                                     </mask>
                                 </variation>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLF-qr-XHX">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SYP-hT-9Ww" firstAttribute="top" secondItem="wHO-AL-zXt" secondAttribute="bottom" id="4Lk-bY-WeJ"/>
                             <constraint firstItem="8ny-q9-rJ1" firstAttribute="centerY" secondItem="gKd-w3-MUU" secondAttribute="centerY" id="6ud-cE-4L1"/>
+                            <constraint firstItem="jLF-qr-XHX" firstAttribute="leading" secondItem="gKd-w3-MUU" secondAttribute="leadingMargin" id="7af-rg-MuZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8ny-q9-rJ1" secondAttribute="trailing" id="Bnp-Eu-OEg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wHO-AL-zXt" secondAttribute="trailing" constant="-20" id="FkF-du-vIZ"/>
                             <constraint firstItem="8ny-q9-rJ1" firstAttribute="leading" secondItem="gKd-w3-MUU" secondAttribute="leadingMargin" id="Lla-ft-NYr"/>
                             <constraint firstItem="wHO-AL-zXt" firstAttribute="leading" secondItem="gKd-w3-MUU" secondAttribute="leadingMargin" constant="-20" id="TXd-Ge-LzC"/>
+                            <constraint firstItem="jLF-qr-XHX" firstAttribute="top" secondItem="LEl-yg-Cn1" secondAttribute="bottom" constant="33" id="YX7-om-Cz4">
+                                <variation key="widthClass=compact" constant="35"/>
+                            </constraint>
+                            <constraint firstItem="jLF-qr-XHX" firstAttribute="centerX" secondItem="gKd-w3-MUU" secondAttribute="centerX" id="f86-jb-noz"/>
                             <constraint firstItem="8ny-q9-rJ1" firstAttribute="centerX" secondItem="gKd-w3-MUU" secondAttribute="centerX" id="gZb-QO-sf5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jLF-qr-XHX" secondAttribute="trailing" id="stw-YN-eFG"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="8ny-q9-rJ1"/>
                                 <exclude reference="wHO-AL-zXt"/>
+                                <exclude reference="jLF-qr-XHX"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="4Lk-bY-WeJ"/>
+                                <exclude reference="7af-rg-MuZ"/>
+                                <exclude reference="YX7-om-Cz4"/>
+                                <exclude reference="f86-jb-noz"/>
+                                <exclude reference="stw-YN-eFG"/>
                                 <exclude reference="6ud-cE-4L1"/>
                                 <exclude reference="Bnp-Eu-OEg"/>
                                 <exclude reference="Lla-ft-NYr"/>
@@ -259,9 +277,14 @@
                             <mask key="subviews">
                                 <include reference="8ny-q9-rJ1"/>
                                 <include reference="wHO-AL-zXt"/>
+                                <include reference="jLF-qr-XHX"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="4Lk-bY-WeJ"/>
+                                <include reference="7af-rg-MuZ"/>
+                                <include reference="YX7-om-Cz4"/>
+                                <include reference="f86-jb-noz"/>
+                                <include reference="stw-YN-eFG"/>
                                 <include reference="6ud-cE-4L1"/>
                                 <include reference="Bnp-Eu-OEg"/>
                                 <include reference="Lla-ft-NYr"/>
@@ -282,6 +305,7 @@
                         <outlet property="PlayButtonOutlet" destination="BOt-7G-KUw" id="6MK-Pm-69b"/>
                         <outlet property="RadioImage" destination="8ny-q9-rJ1" id="lnx-Xk-8JV"/>
                         <outlet property="RadioTitle" destination="0co-Fc-h4z" id="eyb-Ig-8bC"/>
+                        <outlet property="SongTitle" destination="jLF-qr-XHX" id="GI6-Bo-xUD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35D-sB-vXw" userLabel="First Responder" sceneMemberID="firstResponder"/>

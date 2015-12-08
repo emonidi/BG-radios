@@ -15,7 +15,7 @@ class RadioModel{
         [
             Radio(name:"БНР програма Хоризонт",
                 description:"Българско национално радио",
-                url:NSURL(string: "http://stream.bnr.bg:8002/horizont.m3u")!,
+                url:NSURL(string: "http://uk2.internet-radio.com:31491/")!,
                 stationImgUrl:NSURL(string: "http://static.bnr.bg/gallery/00/00a28d9fc77e98be96dfe530acff67e7.jpg")!
             ),
             Radio(name: "БНР програма Христо Ботев",
