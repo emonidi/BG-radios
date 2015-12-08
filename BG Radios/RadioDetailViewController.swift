@@ -14,6 +14,7 @@ class RadioDetailViewController: UIViewController {
     var RadioData:RadioModel.Radio!;
     var Player:AVPlayer!
     var playerItem:AVPlayerItem!
+    var hasObserver:Bool = false;
     
     @IBOutlet var PlayButtonOutlet: UIButton!
     @IBOutlet var PauseButton: UIButton!
@@ -80,9 +81,13 @@ class RadioDetailViewController: UIViewController {
         PauseButton.hidden = false;
         var asset = AVAsset(URL: RadioData.url)
         playerItem = AVPlayerItem(asset: asset);
-        playerItem.addObserver(self, forKeyPath: "timedMetadata", options: NSKeyValueObservingOptions.New, context: nil)
         Player = AVPlayer(playerItem: playerItem);
         Player.play();
+        
+        if(!hasObserver){
+            playerItem.addObserver(self, forKeyPath: "timedMetadata", options: NSKeyValueObservingOptions.New, context: nil)
+            hasObserver = true;
+        }
     }
     
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
@@ -96,26 +101,33 @@ class RadioDetailViewController: UIViewController {
         }
         
         dispatch_async(dispatch_get_main_queue(), {()->Void in
-            self.SongTitle.text = title;
+            self.setTrackDetails(title);
         })
-        
     
     }
     
+    func setTrackDetails(details: String){
+        self.SongTitle.text = details;
+    }
+    
     override func viewDidDisappear(animated: Bool) {
-        removePlayerObserver();
+        removePlayerObserver()
     }
     
     
     @IBAction func pauseButtonClick(sender: AnyObject) {
         Player.pause();
         removePlayerObserver();
+        setTrackDetails("");
         PauseButton.hidden = true;
         PlayButtonOutlet.hidden = false;
     }
     
     
     func removePlayerObserver(){
-        playerItem.removeObserver(self, forKeyPath: "timedMetadata")
+        if(hasObserver){
+            playerItem.removeObserver(self, forKeyPath: "timedMetadata")
+            hasObserver = false;
+        }
     }
 }
